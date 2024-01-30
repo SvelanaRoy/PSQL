@@ -17,7 +17,8 @@ VALUES
 ('Метель августа',2000),
 ('Гранатовый альбом',1998),
 ('All the Way',1961),
-('Люцифераза',2018);
+('Люцифераза',2018),
+('Test',2020);
 
 INSERT INTO tracks(name,album_id,duration) 
 VALUES
@@ -32,7 +33,9 @@ VALUES
 ('Дракон-2018',5,246),
 ('All the Way',4,175),
 ('is my test',4,170),
-('is my test no collection',4,170);
+('is my test no collection',4,170),
+('testim2',6,173),
+('testim',6,170);
 
 INSERT INTO collections(name,issued_year) 
 VALUES
@@ -43,18 +46,19 @@ VALUES
 
 INSERT INTO genres_singers(genre_id,singer_id) 
 VALUES
-(1,8),
-(1,9),
-(2,10),
-(3,11);
+(1,1),
+(1,2),
+(2,3),
+(3,4);
 
 INSERT INTO singers_albums(singer_id,album_id) 
 VALUES
-(8,1),
-(8,2),
-(9,3),
-(10,5),
-(11,4);
+(1,1),
+(1,2),
+(2,3),
+(3,5),
+(4,4),
+(4,6);
 
 INSERT INTO tracks_collections(collection_id,track_id) 
 VALUES
@@ -81,5 +85,5 @@ VALUES
 (3,9),
 (4,8),
 (4,9),
-(4,10)
+(4,10),
 (4,11);
