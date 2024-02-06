@@ -89,4 +89,5 @@ with psycopg2.connect(database="test8", user="postgres", password="abc123") as c
         delete_phone ("9999998",client_id)
         find_client("Ruoy")
         change_client(1,"Sam")
+        delete_client (1)
 conn.close()     
